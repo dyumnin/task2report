@@ -1,9 +1,9 @@
 [project]
 name = "task2report"
 version = "0.1.0"
-description = ""
+description = "Generate reports from taskwiki"
 authors = [
-    {name = "", email = ""},
+    {name = "Vijayvithal", email = "jahagirdar.vs@gmail.com"},
 ]
 dependencies = [
     "peakrdl",

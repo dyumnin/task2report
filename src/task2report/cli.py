@@ -1,9 +1,12 @@
 """Command Line Interface."""
 from .task2report import runParser
+<<<<<<< before updating
 
 import subprocess
 
 import copier
+=======
+>>>>>>> after updating
 import typer
 
 app = typer.Typer()
@@ -16,7 +19,7 @@ def run() -> None:
 
 @app.command()
 def task2report(filename:str) -> None:
-    """"""
+    """Generate reports from taskwiki"""
     with open(filename,'r') as file:
         runParser(file)
 
