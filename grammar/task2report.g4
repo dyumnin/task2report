@@ -1,0 +1,18 @@
+grammar task2report;
+WORDS: ([a-zA-Z0-9 '().,|:+?]|'-')+;
+top:(heading|bullet)+ EOF;
+EOL : ([\r\n\f]+|EOF) ;
+heading: '# ' string EOL;
+string: WORDS;
+SPACES:[ \t]+;
+indent:SPACES?;
+STAR: '* ' ('[' [ XD.oO]']')?;
+YEAR:[0-9]+;
+MONTH:[0-9]+;
+DAY:[0-9]+;
+DATE: SPACES* '(' YEAR '-' MONTH '-' DAY ')';
+date:DATE;
+star: STAR;
+bullet:{this.column==0} indent star  string date? tag? EOL;
+hex: WORDS;
+tag: '#' hex;

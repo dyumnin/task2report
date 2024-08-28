@@ -1,0 +1,12 @@
+T__0=1
+T__1=2
+WORDS=3
+EOL=4
+SPACES=5
+STAR=6
+YEAR=7
+MONTH=8
+DAY=9
+DATE=10
+'# '=1
+'#'=2

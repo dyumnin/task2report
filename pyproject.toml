@@ -1,0 +1,25 @@
+[project]
+name = "task2report"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "", email = ""},
+]
+dependencies = [
+    "peakrdl",
+    "systemrdl-compiler>=1.27.3",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+scripts.task2report = "task2report.cli:app"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project.entry-points."peakrdl.exporters"]
+task2report = "task2report.__peakrdl__:Exporter"
+
+[tool.pdm]
+distribution = true
