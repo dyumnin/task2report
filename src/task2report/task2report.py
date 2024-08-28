@@ -1,13 +1,7 @@
 from antlr4 import *
-<<<<<<< before updating
-from .grammar.task2reportLexer import Lexer
-from .grammar.task2reportListener import Listener
-from .grammar.task2reportParser import Parser
-=======
 from task2reportLexer import task2reportLexer
 from task2reportListener import task2reportListener
 from task2reportParser import task2reportParser
->>>>>>> after updating
 import sys
 import os
 
