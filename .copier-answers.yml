@@ -1,8 +1,7 @@
-_commit: ef49ec4
+_commit: '9400718'
 _src_path: gh:dyu-copier/antlr.git
 author: Vijayvithal
 email: jahagirdar.vs@gmail.com
 function_name: task2report
-long_desc: ''
 project_name: task2report
 short_desc: Generate reports from taskwiki

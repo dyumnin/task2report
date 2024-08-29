@@ -8,6 +8,7 @@ authors = [
 dependencies = [
     "peakrdl",
     "systemrdl-compiler>=1.27.3",
+    "typer>=0.12.5",
 ]
 requires-python = ">=3.10"
 readme = "README.md"

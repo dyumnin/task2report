@@ -13,6 +13,6 @@ DAY:[0-9]+;
 DATE: SPACES* '(' YEAR '-' MONTH '-' DAY ')';
 date:DATE;
 star: STAR;
-bullet:{this.column==0} indent star  string date? tag? EOL;
+bullet:indent star  string date? tag? EOL;
 hex: WORDS;
 tag: '#' hex;
